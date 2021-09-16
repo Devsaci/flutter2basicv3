@@ -33,12 +33,13 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.red,
       appBar: AppBar(
         // backgroundColor: Colors.yellow,
         title: Text(widget.title),
       ),
       body: Container(
-        margin: const EdgeInsets.all(10),
+        margin: const EdgeInsets.fromLTRB(30, 60, 90, 100),
         height: double.infinity,
         color: Colors.greenAccent,
           child: Row(
