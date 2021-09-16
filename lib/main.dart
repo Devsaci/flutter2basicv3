@@ -1,4 +1,7 @@
+
+
 import 'package:flutter/material.dart';
+import 'package:flutter2basicv3/text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,9 +32,12 @@ class MyHomePage extends StatefulWidget {
 
 
 class _MyHomePageState extends State<MyHomePage> {
-var s = const TextStyle(
+
+  TextStyle myTextStyle =  const TextStyle(
   fontSize: 15,
 );
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,11 +54,15 @@ var s = const TextStyle(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center ,
               children: const <Widget>[
-                Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Text("Texte 1",style: s),),
+                // Padding(
+                //   padding: EdgeInsets.all(10.0),
+                //   child:   MyText("1",)
+                // ),
+                Text("Texte 2",
+                 style: TextStyle(
+                   fontSize: 15,
+                 ),
                 ),
-                Text("Texte 2",style: TextStyle(fontSize: 10),),
                 Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Text("Texte 3",style: TextStyle(fontSize: 15),),
