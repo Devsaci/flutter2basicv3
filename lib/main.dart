@@ -39,15 +39,22 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
-        margin:  const EdgeInsets.symmetric(vertical: 100.0 , horizontal: 50.0),
+        margin:  const EdgeInsets.all(50),
+        padding: const EdgeInsets.all(20),
         height: double.infinity,
         color: Colors.greenAccent,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center ,
               children: const <Widget>[
-                Text("Texte 1",style: TextStyle(fontSize: 5),),
+                Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Text("Texte 1",style: TextStyle(fontSize: 15),),
+                ),
                 Text("Texte 2",style: TextStyle(fontSize: 10),),
-                Text("Texte 3",style: TextStyle(fontSize: 15),),
+                Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Text("Texte 3",style: TextStyle(fontSize: 15),),
+                ),
               ],
           ),
       ),
