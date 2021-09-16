@@ -29,7 +29,9 @@ class MyHomePage extends StatefulWidget {
 
 
 class _MyHomePageState extends State<MyHomePage> {
-
+var s = const TextStyle(
+  fontSize: 15,
+);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: const <Widget>[
                 Padding(
                   padding: EdgeInsets.all(10.0),
-                  child: Text("Texte 1",style: TextStyle(fontSize: 15),),
+                  child: Text("Texte 1",style: s),),
                 ),
                 Text("Texte 2",style: TextStyle(fontSize: 10),),
                 Padding(
