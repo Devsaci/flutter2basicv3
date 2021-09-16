@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
-        margin: const EdgeInsets.fromLTRB(30, 60, 90, 100),
+        margin:  const EdgeInsets.symmetric(vertical: 100.0 , horizontal: 50.0),
         height: double.infinity,
         color: Colors.greenAccent,
           child: Row(
