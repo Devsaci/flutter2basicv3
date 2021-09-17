@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter2basicv3/text.dart';
 
 
 
@@ -40,17 +41,20 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
-        color: Colors.green,
-        margin: const EdgeInsets.all(30),
-          padding: const EdgeInsets.all(30),
-          alignment: Alignment.center,
-          child: Stack(
-            alignment: AlignmentDirectional.centerEnd,
-            children: <Widget> [
-              Container(width: 200,height: 200,color: Colors.black,),
-              Container(width: 150,height: 150,color: Colors.red,),
-              Container(width: 100,height: 100,color: Colors.yellowAccent,),
+        color: Colors.red,
+          width: 200,
+          height: 200,
+          child: Row(
+            children: const <Widget>[
+              Text("TEXT1", style: myTextStylWhite,),
+              Text("TEXT1", style: myTextStylBlack,),
+
+
+
+
             ],
+            
+            
           ),
       )
     );
