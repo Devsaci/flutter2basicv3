@@ -37,27 +37,27 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body: Container(
-          margin: const EdgeInsets.all(30),
-          color: Colors.red,
-          width: 200,
-          height: 200,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: const <Widget>[
-              Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Text(
-                  "TEXT1",
-                  style: myTextStylWhite,
+          color: Colors.white,
+          width: 300,height: 300,
+          margin: const EdgeInsets.all(50),
+          alignment: Alignment.center,
+          child: Stack(
+            alignment: Alignment.topCenter,
+            children: <Widget>[
+              Container(
+                width: 200,
+                height: 200,
+                color: Colors.green,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const <Widget>[
+                    Text("TEXT1",style: myTextStylBlack,),
+                    Text("TEXT2",style: myTextStylWhite,),
+                    Text("TEXT3",style: myTextStylBlack,),
+                  ],
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Text(
-                  "TEXT1",
-                  style: myTextStylBlack,
-                ),
-              ),
+
             ],
           ),
         ));
