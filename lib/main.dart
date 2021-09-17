@@ -45,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.all(30),
           alignment: Alignment.center,
           child: Stack(
+            alignment: AlignmentDirectional.centerEnd,
             children: <Widget> [
               Container(width: 200,height: 200,color: Colors.black,),
               Container(width: 150,height: 150,color: Colors.red,),
